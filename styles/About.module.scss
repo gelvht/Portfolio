@@ -1,0 +1,19 @@
+$breakpoint-tablet: 1000px;
+$breakpoint-phone: 840px;
+
+.about {
+  display: flex;
+  margin: 3rem 4rem 0 0;
+  align-items: center;
+  gap: 5rem;
+  justify-content: center;
+  @media screen and (max-width: $breakpoint-tablet) {
+    gap: 2rem;
+  }
+  @media screen and (max-width: $breakpoint-phone) {
+    flex-direction: column;
+    padding-bottom: 1rem;
+    gap: 0;
+    margin-right: 0;
+  }
+}

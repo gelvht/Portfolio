@@ -1,0 +1,46 @@
+$breakpoint-tablet: 650px;
+
+.contact {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+  }
+  .contact__cv {
+    height: 60px;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    background: var(--tertiary-text-color);
+    box-shadow: 5px 5px 9px #ababab, -5px -5px 9px #ffffff;
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+    .contact__cv_link {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      .cv__icon {
+        color: var(--secondary-text-color);
+      }
+    }
+  }
+  .contact__text {
+    padding: 5rem 2rem;
+    border-left: 1px solid var(--primary-text-color);
+    @media screen and (max-width: $breakpoint-tablet) {
+      border: none;
+      padding-top: 0;
+    }
+
+    .info {
+      font-weight: 500;
+      margin: 1rem 0;
+      .info_title {
+        font-weight: 700;
+      }
+    }
+  }
+}
